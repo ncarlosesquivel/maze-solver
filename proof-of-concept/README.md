@@ -96,3 +96,13 @@ Al final el codigo deberia logear:
 A -> G -> I -> K -> B 
 Path length: 4
 ```
+
+## Segunda revision
+
+Ahora que sabemos que la prueba de concepto funciona podemos hacer algunas mejoras
+
+1. Cambiamos stack por una cola, tradicionalmente es mas apropiado para BFS
+2. Podemos usar un Hash Set para los nodos que ya visitamos, para fines teoricos nos provee mejor optimizacion en cuanto a tiempo en comparacion a `.includes()` y evitamos visitar el mismo nodo varias veces
+3. Para evitar algun edge case, mejor seria cambiar `while(true)` por alguna condicion que termine el loop
+4. Vamos a retornar la solucion en vez de logearla
+5. Mejor lectura del codigo
