@@ -1,0 +1,14 @@
+{
+    "restartable": "rs",
+    "ignore": [".git", "node_modules/**/node_modules", "web", "proof-of-concept"],
+    "verbose": true,
+    "execMap": {
+        "ts": "node --require ts-node/register"
+    },
+    "watch": ["src/"],
+    "env": {
+        "NODE_ENV": "development",
+        "PORT": "8080"
+    },
+    "ext": "js,json,ts"
+}
