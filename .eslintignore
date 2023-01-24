@@ -1,0 +1,5 @@
+build/
+test/fixtures/
+template/
+proof-of-concept/
+.vscode/
